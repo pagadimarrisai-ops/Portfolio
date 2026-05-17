@@ -522,3 +522,77 @@ a {
     gap: 14px;
   }
 }
+
+
+.page-shell {
+  position: relative;
+  overflow: hidden;
+  background: #f7f4ee;
+}
+
+.interactive-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  animation: drift 14s ease-in-out infinite alternate;
+}
+
+.orb-one {
+  top: 8%;
+  left: -10%;
+  background: #c9b79c;
+}
+
+.orb-two {
+  top: 35%;
+  right: -12%;
+  background: #d8d2c3;
+  animation-delay: 3s;
+}
+
+.orb-three {
+  bottom: -12%;
+  left: 35%;
+  background: #b7aa96;
+  animation-delay: 6s;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  opacity: 0.35;
+}
+
+.portfolio-nav,
+.home-hero,
+.section-card,
+.interactive-project-grid {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(80px, -60px, 0) scale(1.15);
+  }
+}

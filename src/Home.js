@@ -12,6 +12,12 @@ export default function Home() {
 
   return (
     <div className="page-shell">
+         <div className="interactive-bg">
+    <div className="bg-orb orb-one" />
+    <div className="bg-orb orb-two" />
+    <div className="bg-orb orb-three" />
+    <div className="bg-grid" />
+  </div>
       <nav className="portfolio-nav">
         <Link to="/" className="nav-logo">
           Sai Preetham

@@ -17,6 +17,7 @@ export default function Projects() {
           <Link to="/" className="page-back">
             ← Back to Home
           </Link>
+          hiiiiii for testing purposes only, please ignore this text and the next line
         </div>
       </section>
     </div>
