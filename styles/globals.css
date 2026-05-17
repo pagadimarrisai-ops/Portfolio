@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #faf7f2;
+  --muted: #6b6b6f;
+}
+
+html, body {
+  @apply bg-offwhite text-black antialiased;
+}
+
+.site-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-figure {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.muted { color: var(--muted); }
+
+.chip {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.06);
+  font-size: 0.9rem;
+}
